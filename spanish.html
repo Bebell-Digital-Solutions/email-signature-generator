@@ -417,7 +417,7 @@ background: var(--bg);
             
             <div class="top-menu-actions">
 
-                <div class="fab" title="Spanish/Español 🇪🇸" onclick="window.open('https://bebell-digital-solutions.github.io/email-signature-generator/spanish', '_self')"><i class="fa fa-globe"></i></div>                
+                <div class="fab" title="Inglés/English 🇺🇸" onclick="window.open('https://bebell-digital-solutions.github.io/email-signature-generator', '_self')"><i class="fa fa-globe"></i></div>                
                 <div class="fab" id="viewSavedSignaturesBtn" title="Ver Firmas Guardadas"><i class="fas fa-list-alt"></i></div>
                 <div class="fab" title="Centro de Ayuda" onclick="showToast('¡El centro de ayuda estará disponible pronto!')"><i class="fa fa-info-circle"></i></div>
                 <div class="fab" id="darkModeToggle" title="Cambiar Tema"><i class="fas fa-moon"></i></div>
@@ -430,8 +430,8 @@ background: var(--bg);
     <!-- Main Content -->
     <div class="container mx-auto p-4 md:p-8" style="max-width: 1200px;">
         <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold" style="color: var(--primary-color);">Email Signature Generator</h1>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Create your professional email signature in minutes.</p>
+            <h1 class="text-4xl font-bold" style="color: var(--primary-color);">Generador de Firmas de Correo</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Crea tu firma de correo profesional en minutos.</p>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -441,64 +441,64 @@ background: var(--bg);
                     
                     <!-- Personal Info -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Personal Info</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Información Personal</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="fullName" class="form-label">Full Name</label>
-                                <input type="text" id="fullName" class="form-input" placeholder="e.g., Jane Doe" required>
+                                <label for="fullName" class="form-label">Nombre Completo</label>
+                                <input type="text" id="fullName" class="form-input" placeholder="Ej: Juan Pérez" required>
                             </div>
                             <div>
-                                <label for="jobTitle" class="form-label">Job Title</label>
-                                <input type="text" id="jobTitle" class="form-input" placeholder="e.g., Marketing Manager">
+                                <label for="jobTitle" class="form-label">Cargo</label>
+                                <input type="text" id="jobTitle" class="form-input" placeholder="Ej: Gerente de Marketing">
                             </div>
                              <div>
-                                <label for="department" class="form-label">Department</label>
-                                <input type="text" id="department" class="form-input" placeholder="e.g., Sales">
+                                <label for="department" class="form-label">Departamento</label>
+                                <input type="text" id="department" class="form-input" placeholder="Ej: Ventas">
                             </div>
                         </div>
                     </div>
 
                     <!-- Company Details -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Company Details</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Detalles de la Empresa</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="companyName" class="form-label">Company Name</label>
-                                <input type="text" id="companyName" class="form-input" placeholder="e.g., Innovate Corp">
+                                <label for="companyName" class="form-label">Nombre de la Empresa</label>
+                                <input type="text" id="companyName" class="form-input" placeholder="Ej: Innovate Corp">
                             </div>
                             <div>
-                                <label for="website" class="form-label">Website URL</label>
-                                <input type="url" id="website" class="form-input" placeholder="https://example.com">
+                                <label for="website" class="form-label">URL del Sitio Web</label>
+                                <input type="url" id="website" class="form-input" placeholder="https://ejemplo.com">
                             </div>
                             <div class="md:col-span-2">
-                                <label for="address" class="form-label">Address</label>
-                                <textarea id="address" class="form-input h-24" placeholder="123 Innovation Drive, Tech City"></textarea>
+                                <label for="address" class="form-label">Dirección</label>
+                                <textarea id="address" class="form-input h-24" placeholder="123 Calle Innovación, Ciudad Tecnológica"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <!-- Contact Info -->
                     <div class="card">
-                         <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Contact Info</h2>
+                         <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Información de Contacto</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" id="email" class="form-input" placeholder="jane.doe@example.com" required>
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" id="email" class="form-input" placeholder="juan.perez@ejemplo.com" required>
                             </div>
                             <div>
-                                <label for="mainPhone" class="form-label">Main Phone</label>
+                                <label for="mainPhone" class="form-label">Teléfono Principal</label>
                                 <input type="tel" id="mainPhone" class="form-input" placeholder="+1 (555) 123-4567">
                             </div>
                             <div>
-                                <label for="mobilePhone" class="form-label">Mobile Phone</label>
+                                <label for="mobilePhone" class="form-label">Teléfono Móvil</label>
                                 <input type="tel" id="mobilePhone" class="form-input" placeholder="+1 (555) 987-6543">
                             </div>
                             <div>
-                                <label for="directPhone" class="form-label">Direct Phone</label>
+                                <label for="directPhone" class="form-label">Teléfono Directo</label>
                                 <input type="tel" id="directPhone" class="form-input" placeholder="+1 (555) 555-5555">
                             </div>
                              <div>
-                                <label for="faxNumber" class="form-label">Fax Number</label>
+                                <label for="faxNumber" class="form-label">Número de Fax</label>
                                 <input type="tel" id="faxNumber" class="form-input" placeholder="+1 (555) 111-2222">
                             </div>
                         </div>
@@ -506,58 +506,58 @@ background: var(--bg);
                     
                     <!-- Social Media -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Social & Other Links (optional)</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Redes Sociales y Otros Enlaces (opcional)</h2>
                         <div class="grid grid-cols-1 gap-4">
-                             <input type="url" id="linkedin" class="form-input" placeholder="LinkedIn URL">
-                             <input type="url" id="twitter" class="form-input" placeholder="Twitter URL">
-                             <input type="url" id="instagram" class="form-input" placeholder="Instagram URL">
-                             <input type="url" id="facebook" class="form-input" placeholder="Facebook URL">
-                             <input type="url" id="youtube" class="form-input" placeholder="YouTube URL">
-                             <input type="url" id="pinterest" class="form-input" placeholder="Pinterest URL">
-                             <input type="url" id="tiktok" class="form-input" placeholder="TikTok URL">
-                             <input type="url" id="snapchat" class="form-input" placeholder="Snapchat URL">
-                             <input type="url" id="reddit" class="form-input" placeholder="Reddit URL">
-                             <input type="url" id="tumblr" class="form-input" placeholder="Tumblr URL">
-                             <input type="url" id="vimeo" class="form-input" placeholder="Vimeo URL">
-                             <input type="url" id="threads" class="form-input" placeholder="Threads URL">
-                             <input type="text" id="skype" class="form-input" placeholder="Skype Username">
-                             <input type="url" id="whatsapp" class="form-input" placeholder="WhatsApp URL (e.g., wa.me/1..)">
-                             <input type="url" id="telegram" class="form-input" placeholder="Telegram URL (e.g., t.me/...)">
-                             <input type="url" id="googlemaps" class="form-input" placeholder="Google Maps URL">
+                             <input type="url" id="linkedin" class="form-input" placeholder="URL de LinkedIn">
+                             <input type="url" id="twitter" class="form-input" placeholder="URL de Twitter">
+                             <input type="url" id="instagram" class="form-input" placeholder="URL de Instagram">
+                             <input type="url" id="facebook" class="form-input" placeholder="URL de Facebook">
+                             <input type="url" id="youtube" class="form-input" placeholder="URL de YouTube">
+                             <input type="url" id="pinterest" class="form-input" placeholder="URL de Pinterest">
+                             <input type="url" id="tiktok" class="form-input" placeholder="URL de TikTok">
+                             <input type="url" id="snapchat" class="form-input" placeholder="URL de Snapchat">
+                             <input type="url" id="reddit" class="form-input" placeholder="URL de Reddit">
+                             <input type="url" id="tumblr" class="form-input" placeholder="URL de Tumblr">
+                             <input type="url" id="vimeo" class="form-input" placeholder="URL de Vimeo">
+                             <input type="url" id="threads" class="form-input" placeholder="URL de Threads">
+                             <input type="text" id="skype" class="form-input" placeholder="Usuario de Skype">
+                             <input type="url" id="whatsapp" class="form-input" placeholder="URL de WhatsApp (ej: wa.me/1..)">
+                             <input type="url" id="telegram" class="form-input" placeholder="URL de Telegram (ej: t.me/...)">
+                             <input type="url" id="googlemaps" class="form-input" placeholder="URL de Google Maps">
                         </div>
                     </div>
 
                     <!-- Customization -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Customization</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Personalización</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Left side for buttons -->
                             <div class="space-y-6">
                                 <div>
-                                    <label for="logoUpload" class="form-label mb-2 block">Logo / Profile Picture</label>
+                                    <label for="logoUpload" class="form-label mb-2 block">Logo / Foto de Perfil</label>
                                     <input type="file" id="logoUpload" accept="image/*" class="hidden">
-                                    <label for="logoUpload" class="btn-primary w-full md:w-auto">Upload Image</label>
+                                    <label for="logoUpload" class="btn-primary w-full md:w-auto">Subir Imagen</label>
                                     <div id="logoPreview" class="mt-3"></div>
                                 </div>
                                  <div>
-                                    <label for="bannerUpload" class="form-label mb-2 block">Add Banner Image</label>
+                                    <label for="bannerUpload" class="form-label mb-2 block">Añadir Banner</label>
                                     <input type="file" id="bannerUpload" accept="image/*" class="hidden">
-                                    <label for="bannerUpload" class="btn-primary w-full md:w-auto">Upload Banner</label>
+                                    <label for="bannerUpload" class="btn-primary w-full md:w-auto">Subir Banner</label>
                                     <div id="bannerPreview" class="mt-3"></div>
                                 </div>
                             </div>
                              <!-- Right side for selectors -->
                             <div class="space-y-6">
                                 <div>
-                                    <label for="brandColor" class="form-label mb-2 block">Brand Color</label>
+                                    <label for="brandColor" class="form-label mb-2 block">Color de Marca</label>
                                     <input type="color" id="brandColor" value="#DF1783">
                                 </div>
                                 <div>
-                                    <label for="socialIconShape" class="form-label mb-2 block">Image Shape</label>
+                                    <label for="socialIconShape" class="form-label mb-2 block">Forma de la Imagen</label>
                                      <select id="socialIconShape" class="form-select">
-                                         <option value="round">Round</option>
-                                         <option value="rounded">Rounded Square</option>
-                                         <option value="square">Square</option>
+                                         <option value="round">Redonda</option>
+                                         <option value="rounded">Cuadrado Redondeado</option>
+                                         <option value="square">Cuadrada</option>
                                      </select>
                                 </div>
                             </div>
@@ -573,13 +573,13 @@ background: var(--bg);
                     <!-- Live Preview -->
                     <div class="card">
                         <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-xl font-semibold">Live Preview</h2>
+                            <h2 class="text-xl font-semibold">Vista Previa</h2>
                         </div>
                         <div id="signaturePreview" class="min-h-[200px]" style="background-color: transparent;">
-                            <!-- Signature will be rendered here -->
+                            <!-- La firma se mostrará aquí -->
                         </div>
                         <div class="pt-4 mt-4 border-t border-gray-200 dark:border-gray-600">
-                             <h3 class="text-sm font-semibold mb-3 text-gray-500 dark:text-gray-400">Copy to your preferred email account:</h3>
+                             <h3 class="text-sm font-semibold mb-3 text-gray-500 dark:text-gray-400">Copia a tu cliente de correo preferido:</h3>
                              <div id="copyPillContainer" class="flex flex-wrap gap-2">
                                 <button class="copy-pill-btn">Gmail</button>
                                 <button class="copy-pill-btn">Yahoo Mail</button>
@@ -592,17 +592,16 @@ background: var(--bg);
 
                     <!-- Generated HTML -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4">Generated HTML</h2>
+                        <h2 class="text-xl font-semibold mb-4">HTML Generado</h2>
                         <div class="relative">
-                            <pre class="bg-gray-900 text-white p-4 rounded-lg text-xs overflow-x-auto whitespace-pre-wrap break-words"><code><span id="generatedHTML"><!-- Your HTML will appear here --></span></code></pre>
-                            <button id="copyHtmlButton" class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-bold py-1 px-2 rounded">Copy</button>
+                            <pre class="bg-gray-900 text-white p-4 rounded-lg text-xs overflow-x-auto whitespace-pre-wrap break-words"><code><span id="generatedHTML"><!-- Tu HTML aparecerá aquí --></span></code></pre>
+                            <button id="copyHtmlButton" class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-bold py-1 px-2 rounded">Copiar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   
-
+    
 
 
 
