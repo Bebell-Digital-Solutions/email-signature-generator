@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Firmas de Correo Moderno</title>
+    <title>Modern Email Signature Generator</title>
     
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -300,7 +299,7 @@
 
 
 
-          /* ===== FOOTER ===== */
+         /* ===== FOOTER ===== */
 .footer {
 padding-top: 30px;
     background: va(--bg);
@@ -310,9 +309,9 @@ padding-top: 30px;
     width: 100%;
     border-radius: 7px;
     z-index: 10;
-     margin: 0 auto;
-     max-width: 820px;
-     margin-top: 60px;
+      margin: 0 auto;
+      max-width: 820px;
+      margin-top: 60px;
 margin-bottom: 130px;
 }
 
@@ -383,7 +382,6 @@ margin-bottom: 130px;
     color: #df1783;
 }
     
-
         
         .heart {
             display: inline-block;
@@ -410,20 +408,20 @@ margin-bottom: 130px;
             </div>
             
             <div class="top-menu-actions">
+                <div class="fab" id="viewSavedSignaturesBtn" title="View Saved Signatures"><i class="fas fa-bookmark"></i></div>
+                <div class="fab" title="Help Center" onclick="showToast('Help center will be available soon!')"><i class="fa fa-info-circle"></i></div>
 
-        <!-- Icono de Página de Inicio -->
-<div class="fab" title="Directorio/Directory" onclick="window.open('https://bebell-digital-solutions.github.io/easylistings-agency', '_self')"><i class="fa fa-home"></i></div>        
+
+                <!-- Home Icon -->
+<div class="fab" title="Hompage" onclick="window.open('https://bebell-digital-solutions.github.io/easylistings-agency', '_self')"><i class="fa fa-home"></i></div> 
+
                 
-                <div class="fab" id="viewSavedSignaturesBtn" title="Ver Firmas Guardadas"><i class="fas fa-bookmark"></i></div>
-                <div class="fab" title="Centro de Ayuda" onclick="showToast('¡El centro de ayuda estará disponible pronto!')"><i class="fa fa-info-circle"></i></div>
-                
-      <!-- Icono de Traducción -->
-                <div class="fab" title="Inglés/English 🇺🇸" onclick="window.open('https://bebell-digital-solutions.github.io/easylistings-agency/english/easy-signature', '_self')"><i class="fa fa-globe"></i></div>                
 
+                <!-- Translation Icon -->
+                <div class="fab" title="Spanish/Español 🇪🇸" onclick="window.open('https://bebell-digital-solutions.github.io/easylistings-agency/spanish/easy-signature', '_self')"><i class="fa fa-globe"></i></div>                
 
-
-                <div class="fab" id="darkModeToggle" title="Cambiar Tema"><i class="fas fa-moon"></i></div>
-                <button id="saveSignatureBtn" class="btn-primary ml-2 hidden sm:block">Guardar Firma</button>
+                <div class="fab" id="darkModeToggle" title="Change Theme"><i class="fas fa-moon"></i></div>
+                <button id="saveSignatureBtn" class="btn-primary ml-2 hidden sm:block">Save Signature</button>
             </div>
         </div>
     </div>
@@ -431,8 +429,8 @@ margin-bottom: 130px;
     <!-- Main Content -->
     <div class="container mx-auto p-4 md:p-8" style="max-width: 1200px;">
         <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold" style="color: var(--primary-color);">Generador de Firmas de Correo</h1>
-            <p class="text-gray-600 dark:text-gray-400 mt-2">Crea tu firma de correo profesional en minutos.</p>
+            <h1 class="text-4xl font-bold" style="color: var(--primary-color);">Email Signature Generator</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-2">Create your professional email signature in minutes.</p>
         </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -442,64 +440,64 @@ margin-bottom: 130px;
                     
                     <!-- Personal Info -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Información Personal</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Personal Information</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="fullName" class="form-label">Nombre Completo</label>
-                                <input type="text" id="fullName" class="form-input" placeholder="Ej: Juan Pérez" required>
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" id="fullName" class="form-input" placeholder="E.g., John Doe" required>
                             </div>
                             <div>
-                                <label for="jobTitle" class="form-label">Cargo</label>
-                                <input type="text" id="jobTitle" class="form-input" placeholder="Ej: Gerente de Marketing">
+                                <label for="jobTitle" class="form-label">Job Title</label>
+                                <input type="text" id="jobTitle" class="form-input" placeholder="E.g., Marketing Manager">
                             </div>
                              <div>
-                                <label for="department" class="form-label">Departamento</label>
-                                <input type="text" id="department" class="form-input" placeholder="Ej: Ventas">
+                                <label for="department" class="form-label">Department</label>
+                                <input type="text" id="department" class="form-input" placeholder="E.g., Sales">
                             </div>
                         </div>
                     </div>
 
                     <!-- Company Details -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Detalles de la Empresa</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Company Details</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="companyName" class="form-label">Nombre de la Empresa</label>
-                                <input type="text" id="companyName" class="form-input" placeholder="Ej: Innovate Corp">
+                                <label for="companyName" class="form-label">Company Name</label>
+                                <input type="text" id="companyName" class="form-input" placeholder="E.g., Innovate Corp">
                             </div>
                             <div>
-                                <label for="website" class="form-label">URL del Sitio Web</label>
-                                <input type="url" id="website" class="form-input" placeholder="https://ejemplo.com">
+                                <label for="website" class="form-label">Website URL</label>
+                                <input type="url" id="website" class="form-input" placeholder="https://example.com">
                             </div>
                             <div class="md:col-span-2">
-                                <label for="address" class="form-label">Dirección</label>
-                                <textarea id="address" class="form-input h-24" placeholder="123 Calle Innovación, Ciudad Tecnológica"></textarea>
+                                <label for="address" class="form-label">Address</label>
+                                <textarea id="address" class="form-input h-24" placeholder="123 Innovation Street, Tech City"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <!-- Contact Info -->
                     <div class="card">
-                         <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Información de Contacto</h2>
+                         <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Contact Information</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label for="email" class="form-label">Correo Electrónico</label>
-                                <input type="email" id="email" class="form-input" placeholder="juan.perez@ejemplo.com" required>
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="john.doe@example.com" required>
                             </div>
                             <div>
-                                <label for="mainPhone" class="form-label">Teléfono Principal</label>
+                                <label for="mainPhone" class="form-label">Main Phone</label>
                                 <input type="tel" id="mainPhone" class="form-input" placeholder="+1 (555) 123-4567">
                             </div>
                             <div>
-                                <label for="mobilePhone" class="form-label">Teléfono Móvil</label>
+                                <label for="mobilePhone" class="form-label">Mobile Phone</label>
                                 <input type="tel" id="mobilePhone" class="form-input" placeholder="+1 (555) 987-6543">
                             </div>
                             <div>
-                                <label for="directPhone" class="form-label">Teléfono Directo</label>
+                                <label for="directPhone" class="form-label">Direct Phone</label>
                                 <input type="tel" id="directPhone" class="form-input" placeholder="+1 (555) 555-5555">
                             </div>
                              <div>
-                                <label for="faxNumber" class="form-label">Número de Fax</label>
+                                <label for="faxNumber" class="form-label">Fax Number</label>
                                 <input type="tel" id="faxNumber" class="form-input" placeholder="+1 (555) 111-2222">
                             </div>
                         </div>
@@ -507,58 +505,58 @@ margin-bottom: 130px;
                     
                     <!-- Social Media -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Redes Sociales y Otros Enlaces (opcional)</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Social Media & Other Links (optional)</h2>
                         <div class="grid grid-cols-1 gap-4">
-                             <input type="url" id="linkedin" class="form-input" placeholder="URL de LinkedIn">
-                             <input type="url" id="twitter" class="form-input" placeholder="URL de Twitter">
-                             <input type="url" id="instagram" class="form-input" placeholder="URL de Instagram">
-                             <input type="url" id="facebook" class="form-input" placeholder="URL de Facebook">
-                             <input type="url" id="youtube" class="form-input" placeholder="URL de YouTube">
-                             <input type="url" id="pinterest" class="form-input" placeholder="URL de Pinterest">
-                             <input type="url" id="tiktok" class="form-input" placeholder="URL de TikTok">
-                             <input type="url" id="snapchat" class="form-input" placeholder="URL de Snapchat">
-                             <input type="url" id="reddit" class="form-input" placeholder="URL de Reddit">
-                             <input type="url" id="tumblr" class="form-input" placeholder="URL de Tumblr">
-                             <input type="url" id="vimeo" class="form-input" placeholder="URL de Vimeo">
-                             <input type="url" id="threads" class="form-input" placeholder="URL de Threads">
-                             <input type="text" id="skype" class="form-input" placeholder="Usuario de Skype">
-                             <input type="url" id="whatsapp" class="form-input" placeholder="URL de WhatsApp (ej: wa.me/1..)">
-                             <input type="url" id="telegram" class="form-input" placeholder="URL de Telegram (ej: t.me/...)">
-                             <input type="url" id="googlemaps" class="form-input" placeholder="URL de Google Maps">
+                             <input type="url" id="linkedin" class="form-input" placeholder="LinkedIn URL">
+                             <input type="url" id="twitter" class="form-input" placeholder="Twitter URL">
+                             <input type="url" id="instagram" class="form-input" placeholder="Instagram URL">
+                             <input type="url" id="facebook" class="form-input" placeholder="Facebook URL">
+                             <input type="url" id="youtube" class="form-input" placeholder="YouTube URL">
+                             <input type="url" id="pinterest" class="form-input" placeholder="Pinterest URL">
+                             <input type="url" id="tiktok" class="form-input" placeholder="TikTok URL">
+                             <input type="url" id="snapchat" class="form-input" placeholder="Snapchat URL">
+                             <input type="url" id="reddit" class="form-input" placeholder="Reddit URL">
+                             <input type="url" id="tumblr" class="form-input" placeholder="Tumblr URL">
+                             <input type="url" id="vimeo" class="form-input" placeholder="Vimeo URL">
+                             <input type="url" id="threads" class="form-input" placeholder="Threads URL">
+                             <input type="text" id="skype" class="form-input" placeholder="Skype Username">
+                             <input type="url" id="whatsapp" class="form-input" placeholder="WhatsApp URL (e.g., wa.me/1..)">
+                             <input type="url" id="telegram" class="form-input" placeholder="Telegram URL (e.g., t.me/...)">
+                             <input type="url" id="googlemaps" class="form-input" placeholder="Google Maps URL">
                         </div>
                     </div>
 
                     <!-- Customization -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Personalización</h2>
+                        <h2 class="text-xl font-semibold mb-4 border-b pb-2 border-gray-200 dark:border-gray-600">Customization</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <!-- Left side for buttons -->
                             <div class="space-y-6">
                                 <div>
-                                    <label for="logoUpload" class="form-label mb-2 block">Logo / Foto de Perfil</label>
+                                    <label for="logoUpload" class="form-label mb-2 block">Logo / Profile Picture</label>
                                     <input type="file" id="logoUpload" accept="image/*" class="hidden">
-                                    <label for="logoUpload" class="btn-primary w-full md:w-auto">Subir Imagen</label>
+                                    <label for="logoUpload" class="btn-primary w-full md:w-auto">Upload Image</label>
                                     <div id="logoPreview" class="mt-3"></div>
                                 </div>
                                  <div>
-                                    <label for="bannerUpload" class="form-label mb-2 block">Añadir Banner</label>
+                                    <label for="bannerUpload" class="form-label mb-2 block">Add Banner</label>
                                     <input type="file" id="bannerUpload" accept="image/*" class="hidden">
-                                    <label for="bannerUpload" class="btn-primary w-full md:w-auto">Subir Banner</label>
+                                    <label for="bannerUpload" class="btn-primary w-full md:w-auto">Upload Banner</label>
                                     <div id="bannerPreview" class="mt-3"></div>
                                 </div>
                             </div>
                              <!-- Right side for selectors -->
                             <div class="space-y-6">
                                 <div>
-                                    <label for="brandColor" class="form-label mb-2 block">Color de Marca</label>
+                                    <label for="brandColor" class="form-label mb-2 block">Brand Color</label>
                                     <input type="color" id="brandColor" value="#DF1783">
                                 </div>
                                 <div>
-                                    <label for="socialIconShape" class="form-label mb-2 block">Forma de la Imagen</label>
+                                    <label for="socialIconShape" class="form-label mb-2 block">Image Shape</label>
                                      <select id="socialIconShape" class="form-select">
-                                         <option value="round">Redonda</option>
-                                         <option value="rounded">Cuadrado Redondeado</option>
-                                         <option value="square">Cuadrada</option>
+                                         <option value="round">Round</option>
+                                         <option value="rounded">Rounded Square</option>
+                                         <option value="square">Square</option>
                                      </select>
                                 </div>
                             </div>
@@ -574,29 +572,29 @@ margin-bottom: 130px;
                     <!-- Live Preview -->
                     <div class="card">
                         <div class="flex justify-between items-center mb-4">
-                            <h2 class="text-xl font-semibold">Vista Previa</h2>
+                            <h2 class="text-xl font-semibold">Preview</h2>
                         </div>
                         <div id="signaturePreview" class="min-h-[200px]" style="background-color: transparent;">
-                            <!-- La firma se mostrará aquí -->
+                            <!-- The signature will be displayed here -->
                         </div>
                         <div class="pt-4 mt-4 border-t border-gray-200 dark:border-gray-600">
-                             <h3 class="text-sm font-semibold mb-3 text-gray-500 dark:text-gray-400">Copia a tu cliente de correo preferido:</h3>
-                             <div id="copyPillContainer" class="flex flex-wrap gap-2">
-                                <button class="copy-pill-btn">Gmail</button>
-                                <button class="copy-pill-btn">Yahoo Mail</button>
-                                <button class="copy-pill-btn">AOL Mail</button>
-                                <button class="copy-pill-btn">Outlook</button>
-                                <button class="copy-pill-btn">Apple Mail</button>
-                             </div>
+                              <h3 class="text-sm font-semibold mb-3 text-gray-500 dark:text-gray-400">Copy to your favorite email client:</h3>
+                              <div id="copyPillContainer" class="flex flex-wrap gap-2">
+                                  <button class="copy-pill-btn">Gmail</button>
+                                  <button class="copy-pill-btn">Yahoo Mail</button>
+                                  <button class="copy-pill-btn">AOL Mail</button>
+                                  <button class="copy-pill-btn">Outlook</button>
+                                  <button class="copy-pill-btn">Apple Mail</button>
+                              </div>
                         </div>
                     </div>
 
                     <!-- Generated HTML -->
                     <div class="card">
-                        <h2 class="text-xl font-semibold mb-4">HTML Generado</h2>
+                        <h2 class="text-xl font-semibold mb-4">Generated HTML</h2>
                         <div class="relative">
-                            <pre class="bg-gray-900 text-white p-4 rounded-lg text-xs overflow-x-auto whitespace-pre-wrap break-words"><code><span id="generatedHTML"><!-- Tu HTML aparecerá aquí --></span></code></pre>
-                            <button id="copyHtmlButton" class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-bold py-1 px-2 rounded">Copiar</button>
+                            <pre class="bg-gray-900 text-white p-4 rounded-lg text-xs overflow-x-auto whitespace-pre-wrap break-words"><code><span id="generatedHTML"><!-- Your HTML will appear here --></span></code></pre>
+                            <button id="copyHtmlButton" class="absolute top-2 right-2 bg-gray-700 hover:bg-gray-600 text-white text-xs font-bold py-1 px-2 rounded">Copy</button>
                         </div>
                     </div>
                 </div>
@@ -608,49 +606,37 @@ margin-bottom: 130px;
     <div id="overlay"></div>
     <div id="savedSignaturesPanel">
         <div class="panel-header">
-            <h2 class="text-xl font-semibold">Firmas Guardadas</h2>
+            <h2 class="text-xl font-semibold">Saved Signatures</h2>
             <button id="closePanelBtn" class="fab"><i class="fas fa-times"></i></button>
         </div>
         <div id="signatureList">
-            <!-- Las firmas guardadas se listarán aquí -->
+            <!-- Saved signatures will be listed here -->
         </div>
-
-
-
- </div>
-
-
-
-
-
+</div>
 
 <div>
     
-
-
                   <div class="social-links mb-20 mt-8">
 
-            <a href="https://bebell-digital-solutions.github.io/checklist-creator/espanol" class="social-link" rel="noopener">
-                <span>☑️</span> Creador de Checklist
+            <a href="https://bebell-digital-solutions.github.io/checklist-creator/english" class="social-link" rel="noopener">
+                <span>☑️</span> Checklist Creator
             </a>
-            <a href="https://bebell-digital-solutions.github.io/tasks-manager/es-v03" class="social-link" rel="noopener">
-                <span>🎯</span> Gestor de Tareas
+            <a href="https://bebell-digital-solutions.github.io/tasks-manager/en-v03" class="social-link" rel="noopener">
+                <span>🎯</span> Task Manager
             </a>
-            <a href="https://bebell-digital-solutions.github.io/bookmark-page/es-v03" class="social-link" rel="noopener">
-                <span>🔗</span> Gestor de Enlaces
+            <a href="https://bebell-digital-solutions.github.io/bookmark-page/en-v03" class="social-link" rel="noopener">
+                <span>🔗</span> Link Manager
             </a>
-            <a href="https://bebell-digital-solutions.github.io/magic-toolbox-database/es-v03" class="social-link" rel="noopener">
+            <a href="https://bebell-digital-solutions.github.io/magic-toolbox-database/en-v03" class="social-link" rel="noopener">
                 <span>🧰</span> Magic Toolbox
             </a>
-            <a href="mailto:soporte@bebelldigitalsolutions.com" class="social-link"  rel="noopener">
+            <a href="mailto:support@bebelldigitalsolutions.com" class="social-link"  rel="noopener">
                 <span>📨</span> Tech Support
             </a>
         </div>
-           </footer>
-                    
-            
-
-
+            </footer>
+                
+        
 
     <!-- Toast Notification -->
     <div id="toast"></div>
@@ -770,8 +756,8 @@ margin-bottom: 130px;
                 let contactHtml = '';
                 contactInfo.forEach(item => {
                     if (item.value) {
-                         const text = item.isLink ? `<a href="${item.type === 'email' ? 'mailto:' : ''}${item.value}" style="color: #333333; text-decoration: none;">${item.value}</a>` : `<span style="color: #333333;">${item.value}</span>`;
-                         contactHtml += `<tr><td style="padding-bottom: 5px; vertical-align: middle;"><img src="${contactIcons[item.type]}" alt="${item.type}" width="13" height="13" style="vertical-align: middle; margin-right: 10px; display: inline-block;"></td><td style="padding-bottom: 5px; vertical-align: middle;">${text}</td></tr>`;
+                          const text = item.isLink ? `<a href="${item.type === 'email' ? 'mailto:' : ''}${item.value}" style="color: #333333; text-decoration: none;">${item.value}</a>` : `<span style="color: #333333;">${item.value}</span>`;
+                          contactHtml += `<tr><td style="padding-bottom: 5px; vertical-align: middle;"><img src="${contactIcons[item.type]}" alt="${item.type}" width="13" height="13" style="vertical-align: middle; margin-right: 10px; display: inline-block;"></td><td style="padding-bottom: 5px; vertical-align: middle;">${text}</td></tr>`;
                     }
                 });
 
@@ -781,10 +767,10 @@ margin-bottom: 130px;
                         <tbody>
                             <tr>
                                 <td style="padding-right: 15px; vertical-align: top; width: 100px;">
-                                    <img src="${profileImageUrl}" alt="Perfil" style="width: 100px; height: auto; max-width: 100px; border-radius: 8px;">
+                                    <img src="${profileImageUrl}" alt="Profile" style="width: 100px; height: auto; max-width: 100px; border-radius: 8px;">
                                 </td>
                                 <td style="padding-left: 15px; vertical-align: top; border-left: 2px solid ${data.brandColor};">
-                                    <strong style="color: ${data.brandColor}; font-size: 16px; font-weight: bold; display: block; margin-bottom: 2px;">${data.fullName || 'Tu Nombre'}</strong>
+                                    <strong style="color: ${data.brandColor}; font-size: 16px; font-weight: bold; display: block; margin-bottom: 2px;">${data.fullName || 'Your Name'}</strong>
                                     ${jobTitleAndDepartment ? `<span style="color: #333333; display: block; margin-bottom: 2px;">${jobTitleAndDepartment}</span>` : ''}
                                     ${data.companyName ? `<span style="color: #333333; font-weight: bold; display: block; margin-bottom: 8px;">${data.companyName}</span>` : ''}
                                     <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; line-height: 1.6;"><tbody>${contactHtml}</tbody></table>
@@ -818,7 +804,7 @@ margin-bottom: 130px;
                     const reader = new FileReader();
                     reader.onload = e => {
                         const imgClass = inputId === 'logoUpload' ? 'w-24 h-auto' : 'w-full rounded-lg';
-                        previewElement.innerHTML = `<img src="${e.target.result}" alt="Subiendo..." class="${imgClass} object-cover border-2 border-dashed p-1 border-gray-300">`;
+                        previewElement.innerHTML = `<img src="${e.target.result}" alt="Uploading..." class="${imgClass} object-cover border-2 border-dashed p-1 border-gray-300">`;
                     };
                     reader.readAsDataURL(file);
 
@@ -836,16 +822,16 @@ margin-bottom: 130px;
                             const imageUrl = data.data.link;
                             onUploadSuccess(imageUrl);
                             const imgClass = inputId === 'logoUpload' ? 'w-24 h-auto' : 'w-full rounded-lg';
-                            previewElement.innerHTML = `<img src="${imageUrl}" alt="Vista Previa" class="${imgClass} object-cover">`;
-                            showToast('¡Imagen subida con éxito!');
+                            previewElement.innerHTML = `<img src="${imageUrl}" alt="Preview" class="${imgClass} object-cover">`;
+                            showToast('Image uploaded successfully!');
                         } else {
-                            throw new Error(data.data.error || 'Falló la subida a Imgur');
+                            throw new Error(data.data.error || 'Imgur upload failed');
                         }
                     })
                     .catch(error => {
-                        console.error('Error al subir imagen:', error);
-                        showToast('Falló la subida de imagen. Inténtalo de nuevo.');
-                        previewElement.innerHTML = `<p class="text-xs text-red-500">Subida fallida</p>`;
+                        console.error('Error uploading image:', error);
+                        showToast('Image upload failed. Please try again.');
+                        previewElement.innerHTML = `<p class="text-xs text-red-500">Upload failed</p>`;
                         onUploadSuccess(inputId === 'logoUpload' ? 'https://placehold.co/150x150/E2E8F0/4A5568?text=Logo' : '');
                     })
                     .finally(generateSignature);
@@ -855,7 +841,7 @@ margin-bottom: 130px;
             function copyRichText() {
                 const signatureHTML = signaturePreview.innerHTML;
                 if (!signatureHTML || signatureHTML.trim() === '' || signatureHTML.includes('<!--')) {
-                    showToast('¡No hay nada que copiar todavía!');
+                    showToast('There is nothing to copy yet!');
                     return;
                 }
                 
@@ -863,10 +849,10 @@ margin-bottom: 130px;
                     const blob = new Blob([signatureHTML], { type: 'text/html' });
                     const richTextInput = new ClipboardItem({ 'text/html': blob });
                     navigator.clipboard.write([richTextInput]).then(() => {
-                        showToast('¡Copiado!');
+                        showToast('Copied!');
                     });
                 } catch (err) {
-                    console.error('Copia de texto enriquecido falló, intentando alternativa:', err);
+                    console.error('Rich text copy failed, trying fallback:', err);
                     const listener = (ev) => {
                         ev.preventDefault();
                         ev.clipboardData.setData('text/html', signatureHTML);
@@ -875,21 +861,21 @@ margin-bottom: 130px;
                     document.addEventListener('copy', listener);
                     document.execCommand('copy');
                     document.removeEventListener('copy', listener);
-                    showToast('¡Copiado!');
+                    showToast('Copied!');
                 }
             }
 
             function copyHtmlCode() {
                 const textToCopy = generatedHTMLContainer.textContent;
                 if (!textToCopy || textToCopy.includes('<!--')) {
-                    showToast('¡No hay nada que copiar todavía!');
+                    showToast('There is nothing to copy yet!');
                     return;
                 }
                 if (navigator.clipboard) {
                     navigator.clipboard.writeText(textToCopy).then(() => {
-                        showToast('¡Código HTML copiado al portapapeles!');
+                        showToast('HTML code copied to clipboard!');
                     }).catch(err => {
-                        console.error('Copia asíncrona al portapapeles falló:', err);
+                        console.error('Asynchronous clipboard copy failed:', err);
                         fallbackCopy(textToCopy);
                     });
                 } else {
@@ -906,10 +892,10 @@ margin-bottom: 130px;
                 textArea.select();
                 try {
                     document.execCommand('copy');
-                    showToast('¡Copiado al portapapeles!');
+                    showToast('Copied to clipboard!');
                 } catch (err) {
-                    console.error('Copia de respaldo falló:', err);
-                    showToast('La copia falló. Por favor, copia manualmente.');
+                    console.error('Fallback copy failed:', err);
+                    showToast('Copy failed. Please copy manually.');
                 }
                 document.body.removeChild(textArea);
             }
@@ -949,10 +935,10 @@ margin-bottom: 130px;
                 }
                 profileImageUrl = signatureData.profileImageUrl || 'https://placehold.co/150x150/E2E8F0/4A5568?text=Logo';
                 bannerImageUrl = signatureData.bannerImageUrl || '';
-                document.getElementById('logoPreview').innerHTML = `<img src="${profileImageUrl}" alt="Vista Previa" class="w-24 h-auto object-cover">`;
-                document.getElementById('bannerPreview').innerHTML = bannerImageUrl ? `<img src="${bannerImageUrl}" alt="Vista Previa" class="w-full rounded-lg object-cover">` : '';
+                document.getElementById('logoPreview').innerHTML = `<img src="${profileImageUrl}" alt="Preview" class="w-24 h-auto object-cover">`;
+                document.getElementById('bannerPreview').innerHTML = bannerImageUrl ? `<img src="${bannerImageUrl}" alt="Preview" class="w-full rounded-lg object-cover">` : '';
                 generateSignature();
-                showToast('¡Firma cargada!');
+                showToast('Signature loaded!');
             }
 
             function loadSignaturesFromStorage() {
@@ -967,7 +953,7 @@ margin-bottom: 130px;
             function renderSavedSignatures() {
                 signatureListContainer.innerHTML = '';
                 if (savedSignatures.length === 0) {
-                    signatureListContainer.innerHTML = '<p class="text-center text-gray-500 p-4">Aún no hay firmas guardadas.</p>';
+                    signatureListContainer.innerHTML = '<p class="text-center text-gray-500 p-4">No saved signatures yet.</p>';
                     return;
                 }
                 savedSignatures.forEach(sig => {
@@ -977,8 +963,8 @@ margin-bottom: 130px;
                     item.innerHTML = `
                         <span class="signature-item-name">${sig.name}</span>
                         <div class="signature-item-actions">
-                            <button class="rename-btn" title="Renombrar"><i class="fas fa-pencil-alt"></i></button>
-                            <button class="delete-btn" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                            <button class="rename-btn" title="Rename"><i class="fas fa-pencil-alt"></i></button>
+                            <button class="delete-btn" title="Delete"><i class="fas fa-trash-alt"></i></button>
                         </div>
                     `;
                     signatureListContainer.appendChild(item);
@@ -986,7 +972,7 @@ margin-bottom: 130px;
             }
             
             saveSignatureBtn.addEventListener('click', () => {
-                const name = prompt('Ingresa un nombre para esta firma:', 'Mi Firma');
+                const name = prompt('Enter a name for this signature:', 'My Signature');
                 if (name) {
                     const newSignature = {
                         id: Date.now(),
@@ -996,7 +982,7 @@ margin-bottom: 130px;
                     savedSignatures.push(newSignature);
                     saveSignaturesToStorage();
                     renderSavedSignatures();
-                    showToast(`¡Firma "${name}" guardada!`);
+                    showToast(`Signature "${name}" saved!`);
                 }
             });
 
@@ -1012,19 +998,19 @@ margin-bottom: 130px;
                     populateForm(signature.data);
                     togglePanel(false);
                 } else if (target.matches('.rename-btn')) {
-                    const newName = prompt('Ingresa el nuevo nombre:', signature.name);
+                    const newName = prompt('Enter the new name:', signature.name);
                     if (newName && newName !== signature.name) {
                         signature.name = newName;
                         saveSignaturesToStorage();
                         renderSavedSignatures();
-                        showToast('¡Firma renombrada!');
+                        showToast('Signature renamed!');
                     }
                 } else if (target.matches('.delete-btn')) {
-                    if (confirm(`¿Estás seguro de que quieres eliminar "${signature.name}"?`)) {
+                    if (confirm(`Are you sure you want to delete "${signature.name}"?`)) {
                         savedSignatures = savedSignatures.filter(s => s.id !== signatureId);
                         saveSignaturesToStorage();
                         renderSavedSignatures();
-                        showToast('Firma eliminada.');
+                        showToast('Signature deleted.');
                     }
                 }
             });
@@ -1066,6 +1052,101 @@ margin-bottom: 130px;
     </script>
 </body>
 </html>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Firmas de Correo Moderno</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+</html>
 
 
